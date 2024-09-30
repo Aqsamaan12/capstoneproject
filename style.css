@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body {
@@ -14,6 +15,7 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 /* First Navbar */
 .social-navbar {
   background: linear-gradient(to right, #353232 50%, #000 50%);
@@ -21,38 +23,46 @@ body {
   text-align: right;
   width: 100%;
 }
+
 .social-navbar ul {
   list-style: none;
   margin-right: 1rem;
 }
+
 .partner-list li {
   margin: 0 10px;
 }
+
 .social-navbar ul li {
   display: inline;
   margin-left: 1rem;
 }
+
 .social-navbar ul li a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
 }
+
 .main-navbar ul li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
   transition: color 0.3s;
 }
+
 .main-navbar .logo a {
   font-size: 22px;
   font-weight: bold;
   text-decoration: none;
   color: black;
 }
+
 .social-navbar ul li a:hover {
   color: #1da1f2;
 }
+
 /* Second Navbar (Main Links) */
 .main-navbar {
   background-color: whitesmoke;
@@ -63,17 +73,21 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+
 .main-navbar ul {
   list-style: none;
   display: flex;
   gap: 50px;
 }
+
 .main-navbar ul li {
   display: inline;
 }
+
 .main-navbar ul li a:hover {
   color: #971e1e; /* Hover effect on links */
 }
+
 .cta-button {
   background-color: white;
   color: rgb(124, 12, 12);
@@ -83,6 +97,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 /* Hamburger Icon (Hidden on Large Screens) */
 .hamburger {
   display: none;
@@ -90,33 +105,40 @@ body {
   cursor: pointer;
   color: black;
 }
+
 .container {
   text-align: center;
   padding: 50px;
   border-radius: 10px;
 }
+
 h3,
 h1 {
   color: red;
 }
+
 .description {
   font-size: 20px;
   margin-bottom: 10px;
   line-height: 1.6;
 }
+
 .event-date,
 .location {
   font-size: 17px;
   margin-bottom: 20px;
 }
+
 .event-date {
   font-weight: bold;
 }
+
 .about-page {
   background-image: none;
   background-color: white;
   height: 100%;
 }
+
 /* Main Program Section About page */
 .main-program {
   background-color: #282828;
@@ -124,6 +146,7 @@ h1 {
   padding: 20px 110px;
   text-align: center;
 }
+
 /*  speakers section */
 h2 {
   text-align: center;
@@ -131,17 +154,20 @@ h2 {
   margin-bottom: 15px;
   color: #7e0707;
 }
+
 .main-program h2 {
   margin-bottom: 30px;
   font-size: 2em;
   color: white;
 }
+
 .program-container {
   display: flex;
   justify-content: center;
   gap: 3px;
   flex-wrap: wrap;
 }
+
 .program-card {
   background-color: #3a3a3a;
   padding: 20px;
@@ -151,14 +177,17 @@ h2 {
   color: white;
   transition: transform 0.3s ease;
 }
+
 .program-card h3 {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
+
 .program-card p {
   font-size: 0.9em;
   line-height: 1.5;
 }
+
 .program-card:hover {
   transform: scale(1.05);
 }
@@ -166,6 +195,7 @@ h2 {
 .highlighted {
   border: 2px solid rgb(238, 237, 235);
 }
+
 .program-link {
   display: inline-block;
   margin-top: 20px;
@@ -177,14 +207,17 @@ h2 {
   border-radius: 4px;
   transition: background-color 0.3s;
 }
+
 .program-link:hover {
   background-color: darkorange;
 }
+
 .featured-speakers {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .speaker {
   padding: 20px;
   border-radius: 8px;
@@ -192,6 +225,7 @@ h2 {
   text-align: left;
   width: 40%;
 }
+
 .speaker img {
   float: left;
   width: 80px;
@@ -199,36 +233,43 @@ h2 {
   border-radius: 50%;
   margin-right: 15px;
 }
+
 .speaker h4 {
   font-size: 16px;
   margin-bottom: 5px;
   margin-top: 0;
   color: red;
 }
+
 .speaker p {
   font-size: 16px;
   line-height: 1.4;
   margin: 4px 0;
 }
+
 .speaker strong {
   display: block;
   margin-bottom: 5px;
 }
+
 /*  program header */
 .featured-speakers-header {
   text-align: center;
   margin-bottom: 3rem;
 }
+
 .featured-speakers-header h2 {
   font-size: 30px;
   color: #c51010;
   margin: 2rem;
 }
+
 .featured-speakers-header p {
   font-size: 16px;
   color: #6b0b0b;
   margin: 1rem;
 }
+
 /* footer */
 footer {
   background-color: #282828;
@@ -237,49 +278,58 @@ footer {
   padding: 50px;
   text-align: center;
 }
+
 .footer-content {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .partner-list {
   list-style: none;
   display: flex;
   justify-content: center;
 }
+
 .partner-list img {
   height: 30px;
 }
+
 .last-footer {
   background-color: rgb(240, 235, 226);
   padding: 50px;
   color: black;
 }
+
 /* Notification styles */
 .notification {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #d10a0a; 
-  color: white; 
-  padding: 15px; 
-  border-radius: 5px; 
-  z-index: 1000; 
-  transition: opacity 0.5s ease; 
+  background-color: #d10a0a;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
 }
+
 /* Desktop Styles */
 @media (min-width: 768px) {
   body {
     font-size: 18px;
     margin: 10px;
   }
+
   .social-navbar {
     width: 100%;
   }
+
   .container {
     width: 100%;
     margin: 0 auto;
   }
 }
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   /* Hide Navigation & Show Hamburger */
@@ -293,18 +343,22 @@ footer {
     width: 100%;
     padding: 10px 0;
   }
+
   .nav-links {
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
+
   .nav-links li {
     margin: 15px 0;
   }
+
   /* Display Hamburger Icon */
   .hamburger {
     display: block; /* Show on mobile */
   }
+
   /* Show Navigation when active */
   .nav-links-container.active {
     display: flex;

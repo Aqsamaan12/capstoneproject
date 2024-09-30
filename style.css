@@ -29,6 +29,10 @@ body {
   margin-right: 1rem;
 }
 
+.partner-list li {
+  margin: 0 10px;
+}
+
 .social-navbar ul li {
   display: inline;
   margin-left: 1rem;
@@ -40,15 +44,25 @@ body {
   font-size: 1rem;
   transition: color 0.3s;
 }
+
+.main-navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
 .main-navbar .logo a {
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-  }
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
 .social-navbar ul li a:hover {
   color: #1da1f2;
 }
+
 /* Second Navbar (Main Links) */
 .main-navbar {
   background-color: whitesmoke;
@@ -68,17 +82,6 @@ body {
 
 .main-navbar ul li {
   display: inline;
-}
-
-.partner-list li {
-  margin: 0 10px;
-}
-
-.main-navbar ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  transition: color 0.3s;
 }
 
 .main-navbar ul li a:hover {
@@ -112,7 +115,6 @@ body {
 h3,
 h1 {
   color: red;
-  background: linear-gradient(to right red black);
 }
 
 .description {
@@ -143,6 +145,14 @@ h1 {
   color: white;
   padding: 20px 110px;
   text-align: center;
+}
+
+/*  speakers section */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #7e0707;
 }
 
 .main-program h2 {
@@ -200,14 +210,6 @@ h1 {
 
 .program-link:hover {
   background-color: darkorange;
-}
-
-/*  speakers section */
-h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #7e0707;
 }
 
 .featured-speakers {
@@ -297,19 +299,20 @@ footer {
   padding: 50px;
   color: black;
 }
+
 /* Notification styles */
 .notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    padding: 15px; /* Padding */
-    border-radius: 5px; /* Rounded corners */
-    z-index: 1000; /* Ensure it appears on top */
-    transition: opacity 0.5s ease; /* Fade in/out effect */
-  }
-  
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 15px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  z-index: 1000; /* Ensure it appears on top */
+  transition: opacity 0.5s ease; /* Fade in/out effect */
+}
+
 
 /* Desktop Styles */
 @media (min-width: 768px) {

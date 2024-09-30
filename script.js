@@ -1,4 +1,4 @@
-// JavaScript for dynamically  featured speakers
+// JavaScript for dynamically featured speakers
 const speakers = [
   {
     name: 'Anjali Sastry',
@@ -37,28 +37,49 @@ const speakers = [
     image: 'https://via.placeholder.com/100',
   },
 ];
-// Function of speakers dynamically
+
+// Function to show notification
+function showNotification(message) {
+  const notification = document.createElement('div');
+  notification.className = 'notification';
+  notification.innerText = message;
+  document.body.appendChild(notification);
+
+  // Automatically remove notification after 3 seconds
+  setTimeout(() => {
+    notification.remove();
+  }, 3000);
+}
+
+// Function to load speakers dynamically
 function loadSpeakers() {
   const speakersContainer = document.getElementById('speakers');
   speakers.forEach((speaker) => {
     const speakerDiv = document.createElement('div');
     speakerDiv.classList.add('speaker');
     speakerDiv.innerHTML = `
-            <img src="${speaker.image}" alt="${speaker.name}">
-            <h4>${speaker.name}</h4>
-            <p><strong>${speaker.title}</strong></p>
-            <p>${speaker.description}</p>      `; speakersContainer.appendChild(speakerDiv);
+      <img src="${speaker.image}" alt="${speaker.name}">
+      <h4>${speaker.name}</h4>
+      <p><strong>${speaker.title}</strong></p>
+      <p>${speaker.description}</p>
+    `;
+    speakersContainer.appendChild(speakerDiv);
   });
 }
+
 // Load speakers on page load
 window.onload = loadSpeakers;
-// button by ID
+
+// Button by ID
 const ctaButton = document.getElementById('ctaButton');
-// click event
+
+// Click event
 ctaButton.addEventListener('click', () => {
-  // action
-  alert('You clicked empty button');
+  // Action: Show notification instead of alert
+  showNotification('You clicked the empty button');
 });
+
+// Hamburger menu functionality
 document.getElementById('hamburger').addEventListener('click', () => {
   const navLinks = document.getElementById('nav-links-container');
   navLinks.classList.toggle('active'); // Toggles the menu visibility

@@ -108,7 +108,7 @@ body {
 
 .container {
   text-align: center;
-  padding: 50px;
+  padding: 120px;
   border-radius: 10px;
 }
 
@@ -132,36 +132,32 @@ h1 {
 .event-date {
   font-weight: bold;
 }
-
-.about-page {
-  background-image: none;
-  background-color: white;
-  height: 100%;
-}
-
-/* Main Program Section About page */
+/* Main Program Section */
 .main-program {
-  background-color: #282828;
-  color: white;
-  padding: 20px 110px;
-  text-align: center;
+  background-color: black; 
+  color: white; 
+  padding: 20px 110px; 
+  text-align: center; 
 }
 
-/*  speakers section */
+/* Speakers Section */
 h2 {
+  background-color: rgb(245, 232, 232); 
   text-align: center;
   font-size: 28px;
   margin-bottom: 15px;
-  color: #7e0707;
+  color: #7e0707; 
 }
 
 .main-program h2 {
+  background-color: black; 
   margin-bottom: 30px;
   font-size: 2em;
-  color: white;
+  color: white; 
 }
 
 .program-container {
+  background-color: black; 
   display: flex;
   justify-content: center;
   gap: 3px;
@@ -169,12 +165,12 @@ h2 {
 }
 
 .program-card {
-  background-color: #3a3a3a;
+  background-color: #3a3a3a; 
   padding: 20px;
   border-radius: 8px;
   width: 200px;
   text-align: left;
-  color: white;
+  color: white; 
   transition: transform 0.3s ease;
 }
 
@@ -184,16 +180,9 @@ h2 {
 }
 
 .program-card p {
+  background-color: white;
   font-size: 0.9em;
   line-height: 1.5;
-}
-
-.program-card:hover {
-  transform: scale(1.05);
-}
-
-.highlighted {
-  border: 2px solid rgb(238, 237, 235);
 }
 
 .program-link {
@@ -201,7 +190,7 @@ h2 {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: rgb(192, 23, 23);
-  color: white;
+  color: white; 
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
@@ -213,9 +202,11 @@ h2 {
 }
 
 .featured-speakers {
+  background-color: white; /* Change background to black */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  color: black;
 }
 
 .speaker {
@@ -224,70 +215,78 @@ h2 {
   margin: 10px;
   text-align: left;
   width: 40%;
+  background-color: white;
+  color: rgb(12, 0, 0);
 }
 
 .speaker img {
   float: left;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-right: 15px;
 }
 
 .speaker h4 {
+  background-color: white;
   font-size: 16px;
   margin-bottom: 5px;
   margin-top: 0;
   color: red;
 }
 
-.speaker p {
-  font-size: 16px;
-  line-height: 1.4;
-  margin: 4px 0;
-}
-
-.speaker strong {
-  display: block;
-  margin-bottom: 5px;
-}
-
-/*  program header */
+/* Featured Speakers Header */
 .featured-speakers-header {
+  background-color: white; /* Change to black */
   text-align: center;
   margin-bottom: 3rem;
+  
 }
 
 .featured-speakers-header h2 {
   font-size: 30px;
-  color: #c51010;
-  margin: 2rem;
+  color: #c51010; 
 }
 
 .featured-speakers-header p {
   font-size: 16px;
-  color: #6b0b0b;
   margin: 1rem;
 }
-
-/* footer */
 footer {
   background-color: #282828;
   background-size: 100% 100%;
-  color: #fff;
-  padding: 50px;
+  color: #f8f3f3;
+  padding: 30px;
   text-align: center;
 }
-
 .footer-content {
   max-width: 1000px;
   margin: 0 auto;
 }
+#h3{
+  color: #f8f0f0;
+  height: 30px;
+}
 
 .partner-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+  list-style: none; 
+  display: flex; 
+  justify-content: center; 
+  padding: 0; 
+}
+
+.partner-list li {
+  margin: 0 30px; /* Add space between items */
+}
+
+.partner-list a {
+  text-decoration: none; 
+  color: white; 
+  font-size: 18px; 
+}
+
+body {
+  background-color: black;
 }
 
 .partner-list img {
@@ -296,7 +295,7 @@ footer {
 
 .last-footer {
   background-color: rgb(240, 235, 226);
-  padding: 50px;
+  padding: 5px;
   color: black;
 }
 

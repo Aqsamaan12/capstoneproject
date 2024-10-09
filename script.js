@@ -10,7 +10,7 @@ const speakers = [
     name: 'Neal Khosla',
     title: 'CEO of Curai',
     description: 'Focused on using AI to improve healthcare access and outcomes at Curai.',
-    image: 'https://via.placeholder.com/100',
+    image: 'https://via.placeholder.com/100/',
   },
   {
     name: 'Dana Teppert',
@@ -59,6 +59,7 @@ function loadSpeakers() {
     speakerDiv.classList.add('speaker');
     speakerDiv.innerHTML = `
       <img src="${speaker.image}" alt="${speaker.name}">
+      
       <h4>${speaker.name}</h4>
       <p><strong>${speaker.title}</strong></p>
       <p>${speaker.description}</p>

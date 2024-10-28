@@ -10,7 +10,7 @@ const speakers = [
     name: 'Neal Khosla',
     title: 'CEO of Curai',
     description: 'Focused on using AI to improve healthcare access and outcomes at Curai.',
-    image: 'images/nael.jpg'
+    image: 'images/nael.jpg',
   },
   {
     name: 'Dana Teppert',

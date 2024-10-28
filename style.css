@@ -1,0 +1,384 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Body */
+body {
+  background-image: url(images/bg.jpg);
+  background-color: black; /* Keeping both background properties */
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* First Navbar */
+.social-navbar {
+  background: linear-gradient(to right, #353232 50%, #000 50%);
+  padding: 10px 0;
+  text-align: right;
+  width: 100%;
+}
+
+/* Partner List */
+.partner-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.partner-list li {
+  margin: 0 10px; /* Add space between items */
+}
+
+.partner-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Social Navbar Links */
+.social-navbar ul {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.social-navbar ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.social-navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.main-navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.main-navbar .logo a {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.social-navbar ul li a:hover {
+  color: #1da1f2;
+}
+
+/* Main Navbar */
+.main-navbar {
+  background-color: whitesmoke;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.main-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.main-navbar ul li {
+  display: inline;
+}
+
+.main-navbar ul li a:hover {
+  color: #971e1e; /* Hover effect on links */
+}
+
+/* Call to Action Button */
+.cta-button {
+  background-color: white;
+  color: rgb(124, 12, 12);
+  border-color: #971e1e;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0; /* Example hover effect */
+  color: black; /* Change text color on hover */
+}
+
+/* Hamburger Icon (Hidden on Large Screens) */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: black;
+}
+
+/* Main Content Styling */
+.container {
+  text-align: center;
+  padding: 120px;
+  border-radius: 10px;
+  font-size: 26px;
+}
+
+h3,
+h1 {
+  color: red;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.event-date,
+.location {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.event-date {
+  font-weight: bold;
+}
+
+/* Main Program Section */
+.main-program {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(images/card.jpg);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 90px;
+}
+
+/* Speakers Section */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #860d0d;
+}
+
+.main-program h2 {
+  margin-bottom: 60px;
+  font-size: 1.6em;
+  color: white;
+}
+
+.program-container {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.program-card {
+  background-color: #3c3f46;
+  padding: 2px;
+  border-radius: 8px;
+  width: 200px;
+  margin: 3px;
+  text-align: left;
+  color: rgb(245, 232, 232);
+  transition: transform 0.4s ease;
+}
+
+.highlighted {
+  border: 1px solid rgb(238, 237, 235);
+}
+
+.program-card:hover {
+  transform: scale(1.1); /* Transform on hover */
+}
+
+.program-card h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.program-card p {
+  font-size: 0.7em;
+  line-height: 1.5;
+}
+
+.program-card img {
+  margin: 10px;
+  align-items: center;
+}
+
+.see-program {
+  display: inline-block;
+  padding: 50px 20px;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.program-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(192, 23, 23);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.featured-speakers {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: rgb(197, 6, 6);
+}
+
+.speakers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2500px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-items: center; /* Center individual cards horizontally within the grid */
+}
+
+.speaker {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: left;
+  width: 40%;
+  background-color: white;
+  color: rgb(12, 0, 0);
+}
+
+.speaker img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border-radius: 10%;
+  margin-right: 15px;
+}
+
+.speaker h4 {
+  background-color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  color: red;
+}
+
+.featured-speakers h3 {
+  font-size: 20px;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.featured-speakers p {
+  align-content: center;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #282828;
+  background-size: 100% 100%;
+  color: #f8f3f3;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#h3 {
+  color: #f8f0f0;
+  height: 30px;
+}
+
+.last-footer {
+  background-color: rgb(240, 235, 226);
+  padding: 40px;
+  color: black;
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #d10a0a;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .social-navbar {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Hide Navigation & Show Hamburger */
+  .nav-links-container {
+    display: none;
+    flex-direction: column;
+    background-color: #f0ecec;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  /* Display Hamburger Icon */
+  .hamburger {
+    display: block; /* Show on mobile */
+  }
+
+  /* Show Navigation when active */
+  .nav-links-container.active {
+    display: flex;
+  }
+}

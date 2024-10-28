@@ -2,39 +2,39 @@
 const speakers = [
   {
     name: 'Anjali Sastry',
-    title: 'Senior Lecturer at MIT Sloan School of Management',
+    title: 'Senior Lecturer at MIT ',
     description: 'Expert in global health delivery, applying management and systems thinking to improve public health.',
-    image: 'https://via.placeholder.com/100',
+    image: 'images/alex-amouyel.jpg',
   },
   {
     name: 'Neal Khosla',
     title: 'CEO of Curai',
     description: 'Focused on using AI to improve healthcare access and outcomes at Curai.',
-    image: 'https://via.placeholder.com/100/',
+    image: 'images/nael.jpg'
   },
   {
     name: 'Dana Teppert',
-    title: 'Chief Strategy Officer at Global Innovation Fund',
+    title: 'Chief Strategy Officer ',
     description: 'Leads global innovation efforts to bring sustainable and impactful solutions to developing countries.',
-    image: 'https://via.placeholder.com/100',
+    image: 'images/dana.jpg',
   },
   {
     name: 'Alex Amouyel',
-    title: 'Executive Director of Solve at MIT',
+    title: 'Executive Director MIT',
     description: 'Driving innovation challenges to solve world problems through open innovation.',
-    image: 'https://via.placeholder.com/100',
+    image: 'images/anjl.jpg',
   },
   {
     name: 'Matthew Kalil',
     title: 'Director of Innovation at UNDP',
     description: 'Focused on creating systems and platforms for sustainable development and collaboration.',
-    image: 'https://via.placeholder.com/100',
+    image: 'images/maten.jpg',
   },
   {
     name: 'Raj Panjabi',
-    title: 'CEO of Last Mile Health',
+    title: 'CEO of Mile Health',
     description: 'Global health innovator, improving access to health services in remote areas.',
-    image: 'https://via.placeholder.com/100',
+    image: 'images/raj.jpg',
   },
 ];
 

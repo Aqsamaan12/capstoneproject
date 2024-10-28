@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Home Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -19,66 +19,87 @@
             <li><a href="Logout">Logout</a></li>
         </ul>
     </nav>
+
     <!-- Second Navbar with Hamburger Menu -->
-<nav class="navbar main-navbar">
-    <div class="logo">
-        <a href="about.html">Global<b> Innovation</b></a>
-    </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-    </div>
-    <!-- Nav Links -->
-    <div class="nav-links-container" id="nav-links-container">
-        <ul class="nav-links" id="nav-links">
-            <li><a href="about.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="about.html">Sponsors</a></li>
-            <li><a href="#">Speakers</a></li>
-            <button id="ctaButton" class="cta-button" type="button">Innovation Schedule</button>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar main-navbar">
+        <div class="logo">
+            <a href="#home">Global<b> Innovation</b></a>
+        </div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- Nav Links -->
+        <div class="nav-links-container" id="nav-links-container">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#main-program">About</a></li>
+                <li><a href="#footer">Sponsors</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <button id="ctaButton" class="cta-button" type="button">Innovation Schedule</button>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Content -->
-    <div class="container">
-        <h3>"Hello! Sharing World"</h3>
-        <h1>Global Innovation<br> Exchange Summit<br>2024</h1>
-        <p class="description">
-            <h6>A prestigious, forward-thinking event that brings together global leaders,<br> entrepreneurs, innovators, and investors to explore and showcase the latest<br> advancements in technology, sustainability, and creative industries</h6>
-        </p>
-        <p class="event-date"><h4>2024-11-15(THU) ~ 18(FRI)</h4></p>
-        <p class="location"><h5>@Javits Center 429 11th Ave, New York, NY 10001, United States</h5></p>
+    <div class="container" id="home">
+        <h3>Hello! Sharing World</h3>
+        <h1>Global Innovation<br>Exchange Summit<br>2024</h1>
+        <h6 class="description">
+            A prestigious, forward-thinking event that brings together global leaders,<br>
+            entrepreneurs, innovators, and investors to explore and showcase the latest<br>
+            advancements in technology, sustainability, and creative industries.
+        </h6>
+        <h4 class="event-date">2024-11-15(THU) ~ 18(FRI)</h4>
+        <h5 class="location">@Javits Center 429 11th Ave, New York, NY 10001, United States</h5>
     </div>
+
     <!-- Main Program -->
-    <section class="main-program">
+    <section class="main-program" id="main-program">
         <h2>Main Program</h2>
         <div class="program-container">
-            <div class="program-card">
-                <h3>Summit and Gala Dinner</h3>
-                The Gala Dinner provides a formal networking opportunity and includes presentations like the Global Competitiveness Award.            </div>
-            <div class="program-card">
+            <article class="program-card">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/dining-room.png" alt="Dinner Icon">
+                <h3>Summit Dinner</h3>
+                <p>The Gala Dinner provides a formal networking opportunity and includes presentations like the Global Competitiveness Award.</p>
+            </article>
+            <article class="program-card">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/meeting.png" alt="Annual Meeting Icon">
                 <h3>Annual Meeting</h3>
-                This gathering is exclusive to the Global Federation of Competitiveness Councils (GFCC) members and allows for in-person connections Sharing.            </div>
-            <div class="program-card">
-                <h3>Field Trips and Workshops</h3>
-                These immersive sessions offer participants firsthand insights into the innovation ecosystems of the host country, exploring local talent.            </div>
-            <div class="program-card highlighted">
+                <p>This gathering is exclusive to the Global Federation of Competitiveness Councils (GFCC) members and allows for in-person connections.</p>
+            </article>
+            <article class="program-card">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/bus.png" alt="Field Trip Icon">
+                <h3>Field Trips Workshop</h3>
+                <p>These immersive sessions offer participants firsthand insights into the innovation ecosystems of the host country, exploring local talent.</p>
+            </article>
+            <article class="program-card highlighted">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/key.png" alt="Key Themes Icon">
                 <h3>Key Themes</h3>
-                The event will focus on topics such as Green Transition, Digitalization, Smart Cities and Urban Innovation, Circular Economy, and Sustainable.            </div>
-            <div class="program-card">
-                <h3>B2B Matchmaking Sessions</h3>
-                To help attendees find potential partners for international projects, particularly within the Eureka Network​.            
-        </div>
-        <a href="index.html" class="program-link">SEE THE WHOLE PROGRAM</a>
+                <p>The event will focus on topics such as Green Transition, Digitalization, Smart Cities and Urban Innovation, Circular Economy, and Sustainability.</p>
+            </article>
+            <article class="program-card">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/handshake.png" alt="B2B Matchmaking Sessions Icon">
+                <h3>B2B Matchmaking </h3>
+                <p>To help attendees find potential partners for international projects, particularly within the Eureka Network.</p>
+            </article></div>
+        <a href="#" class="see-program">SEE THE WHOLE PROGRAM</a>
     </section>
-    <!--Feature speakers-->
-        <div class="featured-speakers-header">
-        <h2>Featured Speakers</h2>
-        <p>Meet our renowned speakers who are shaping the future of innovation.</p>
-        <div class="featured-speakers" id="speakers">
     </div>
+    <!-- Featured Speakers -->
+    <section class="featured-speakers" id="speakers">
+        <h3>Featured Speakers</h3>
+        <div class="speakers-container">
+            <div class="speaker-card">
+</div>
+            <!-- Add more speaker cards as needed -->
+        
+    </section><!-- Placeholder for speaker cards -->
+            
+</div>
+
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" id="footer">
             <ul class="partner-list">
                 <li><a href="https://www.mozilla.org/"><img src="" alt="">Mozilla</a></li>
                 <li><a href="https://www.google.com/"><img src="" alt="">Google</a></li>
@@ -88,9 +109,12 @@
             </ul>
         </div>
     </footer>
-<footer class="last-footer"><p>&copy; 2024 Global Innovation Exchange.All Rights Reserved.</p>
+
+    <footer class="last-footer">
+        <p>&copy; 2024 Global Innovation Exchange. All Rights Reserved.</p>
         <p>Empowering innovators worldwide to solve global challenges through technology, partnerships, and funding opportunities.</p>
-</footer>
-<script src="script.js" defer></script>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
